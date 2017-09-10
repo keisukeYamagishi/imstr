@@ -70,4 +70,4 @@ python imageToStr.py
 When executed, it is written in index.html.
 Here is the file at run time
 
-[](http://shichimitoucarashi.com/ImageToStr/)
+[http://shichimitoucarashi.com/ImageToStr/](http://shichimitoucarashi.com/ImageToStr/)
