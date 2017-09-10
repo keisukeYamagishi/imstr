@@ -44,13 +44,13 @@ if img is None:
 
 hei, wid = img.shape[:2]
 
-for wid_num in range(0,hei): #wid):
+for wid_num in range(0,hei):
     if wid_num == 0:
         html = html + '<pre style="font: 10px/5px monospace;">'
     else:
         html = html + '<br>'
 
-    for hei_num in range(0, wid): #hei):
+    for hei_num in range(0, wid):
         if img[wid_num,hei_num,0] is None:
             print "none obj"
         else:
