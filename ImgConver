@@ -3,7 +3,6 @@ import sys
 from ImageConversion import ImageConversion
 from extDetect import Extentions
 from progress import Progress
-from multiprocessing import Pool
 
 argvs = sys.argv
 
