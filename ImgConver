@@ -1,0 +1,15 @@
+#!/usr/bin/python
+import sys
+from ImageConversion import ImageConversion
+from extDetect import Extentions
+from progress import Progress
+from multiprocessing import Pool
+
+argvs = sys.argv
+
+ext = Extentions(argvs)
+
+isImage = ext.CanConversion()
+if isImage == 1:
+    im = ImageConversion(argvs[1])#'nakamoto.jpeg')
+    im.CreateHtml()

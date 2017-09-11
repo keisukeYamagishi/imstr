@@ -36,7 +36,7 @@ def EmurateColor(w, h):
 
 html = start_html()
 
-img = cv2.imread('./nakamoto.jpeg', cv2.IMREAD_COLOR)
+img = cv2.imread('./fuckIage.png', cv2.IMREAD_COLOR)
 
 if img is None:
     print 'Failuer loaded image'
