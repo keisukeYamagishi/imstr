@@ -25,9 +25,8 @@ class Extentions:
                 print self.shaping(self.val) +  ' version: ' + Extentions.__VERSION__
             else:
                 path, ext = os.path.splitext(self.fullpath)
-                print ext
+
                 if ext == '.png' or ext == '.jpeg' or ext == '.jpg' or ext == '.jpe':
-                    print 'isImage'
                     isCon = 1
                 else:
                     print 'should set the image, the image format is png or jpeg or jpg, jpe'

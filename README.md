@@ -59,12 +59,29 @@ brew install opencv
 pip install numpy
 ```
 
-# Run
+# Use it
 
 ```
-cd gitrepository
-python imageToStr.py
+->> ./ImgConver
+Use it this
+	ImgConver image path [ /home/shichimi/conversion.png ]
+	ImgConver -v [ Disply this version ]
+Supported image format
+	png, jpeg, kpg, jpe
 
+```
+## Run
+
+```
+->> ./ImgConver -v
+ImgConver version: 1.0.1
+```
+
+***create html***
+
+```
+->> ./ImgConver nakamoto.jpeg
+Complete
 ```
 
 When executed, it is written in index.html.
