@@ -74,7 +74,7 @@ Supported image format
 
 ```
 ->> ./ImgConver -v
-ImgConver version: 1.0.1
+ImgConver version: 2.0.1
 ```
 
 ***create html***
