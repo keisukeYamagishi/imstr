@@ -9,6 +9,7 @@ class Indicator:
     BEERPROGRESS = 3
     LOADINGINGICATOR = 4
     BEERWAITING = 5
+    CREATING = 6
 
     def __init__(self,indis,dur):
         self.isStop = False
@@ -39,6 +40,11 @@ class Indicator:
             pro.start()
         elif indiType == Indicator.BEERWAITING:
             indis = ('Waiting' + '🍺 '*1 ,'Waiting' + '🍺 '*2 ,'Waiting' + '🍺 '*3,'Waiting' + '🍺 '*4, 'Waiting' + '🍺 '*4 + '🍻 ')
+            speed = 0.3
+            pro = Indicator(indis,speed)
+            pro.start()
+        elif indiType == Indicator.CREATING:
+            indis = ('Creating','Creating.','Creating..','Creating...','Creating....')
             speed = 0.3
             pro = Indicator(indis,speed)
             pro.start()

@@ -9,4 +9,4 @@ class ImgThread(threading.Thread):
         super(ImgThread, self).__init__()
 
     def run (self):
-        Indicator.Ind(Indicator.BEERWAITING)
+        Indicator.Ind(Indicator.CREATING)
