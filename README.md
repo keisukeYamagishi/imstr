@@ -67,7 +67,7 @@ Use it this
 	ImgConver image path [ /home/shichimi/conversion.png ]
 	ImgConver -v [ Disply this version ]
 Supported image format
-	png, jpeg, kpg, jpe
+	png, jpeg, jpg, jpe
 
 ```
 ## Run
