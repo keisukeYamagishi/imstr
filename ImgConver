@@ -4,11 +4,12 @@ from ImageConversion import ImageConversion
 from extDetect import Extentions
 from progress import Progress
 
-argvs = sys.argv
+if __name__ == "__main__":
+    argvs = sys.argv
 
-ext = Extentions(argvs)
+    ext = Extentions(argvs)
 
-isImage = ext.CanConversion()
-if isImage == 1:
-    im = ImageConversion(argvs[1])#'nakamoto.jpeg')
-    im.CreateHtml()
+    isImage = ext.CanConversion()
+    if isImage == 1:
+        im = ImageConversion(argvs[1])#'nakamoto.jpeg')
+        im.CreateHtml()
