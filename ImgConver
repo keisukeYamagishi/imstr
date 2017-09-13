@@ -1,14 +1,9 @@
 #!/usr/bin/python
 import sys
-from ImageConversion import ImageConversion
 from extDetect import Extentions
-from progress import Progress
+from Imgmain import Imgmain
 
-argvs = sys.argv
+if __name__ == "__main__":
 
-ext = Extentions(argvs)
-
-isImage = ext.CanConversion()
-if isImage == 1:
-    im = ImageConversion(argvs[1])#'nakamoto.jpeg')
-    im.CreateHtml()
+    if Extentions(sys.argv).CanConversion() == True:
+        Imgmain(sys.argv[1]).imgmain()

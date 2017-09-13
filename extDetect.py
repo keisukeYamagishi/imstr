@@ -2,7 +2,7 @@ import os.path
 
 class Extentions:
 
-    __VERSION__ = '1.0.1'
+    __VERSION__ = '2.0.1'
 
     def __init__(self, argv):
         self.argv = argv
