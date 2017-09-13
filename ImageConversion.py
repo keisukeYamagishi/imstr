@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# coding:utf-8
 import cv2
 import numpy as np
 import sys
@@ -46,7 +47,7 @@ class ImageConversion:
         img = cv2.imread(self.imagePath , cv2.IMREAD_COLOR)
         if img is None:
             print 'Failuer loaded image'
-            sys.exit(1)
+            return
 
         hei, wid = img.shape[:2]
 
@@ -66,4 +67,4 @@ class ImageConversion:
         html = html + self.end_html()
         self.writeToFile(html)
 
-        print 'Complete'
+        print 'Complete\n🍺 '

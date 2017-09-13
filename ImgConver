@@ -1,11 +1,9 @@
 #!/usr/bin/python
 import sys
-from ImageConversion import ImageConversion
 from extDetect import Extentions
-from Progress import Indicator
+from Imgmain import Imgmain
 
 if __name__ == "__main__":
 
     if Extentions(sys.argv).CanConversion() == True:
-        im = ImageConversion(sys.argv[1])
-        im.CreateHtml()
+        Imgmain(sys.argv[1]).imgmain()
