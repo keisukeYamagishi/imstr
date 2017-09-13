@@ -2,7 +2,6 @@
 import cv2
 import numpy as np
 import sys
-from progress import Progress
 
 class ImageConversion:
 
