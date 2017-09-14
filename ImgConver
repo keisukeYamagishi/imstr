@@ -2,8 +2,19 @@
 import sys
 from extDetect import Extentions
 from Imgmain import Imgmain
+from ImgThread import ImgThread
 
 if __name__ == "__main__":
 
-    if Extentions(sys.argv).CanConversion() == True:
-        Imgmain(sys.argv[1]).imgmain()
+    option = Extentions(sys.argv)
+
+    option.CanConversion()
+
+    if option.isConver == 0:
+        print option.output
+    elif option.VERSION == Extentions.VERSION_DISPALY:
+        print option.versionDisplay
+    elif option.SELECTED == Extentions.HTML_NAME:
+        Imgmain(sys.argv[1],option.htmlName).imgmain()
+    else:
+        Imgmain(sys.argv[1], '').imgmain()

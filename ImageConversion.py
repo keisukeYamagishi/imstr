@@ -3,11 +3,14 @@
 import cv2
 import numpy as np
 import sys
+import os
+from String import String
 
 class ImageConversion:
 
-    def __init__(self, imagePath):
+    def __init__(self, imagePath, htmlName):
         self.imagePath = imagePath
+        self.htmlName = htmlName
 
     def convert_hexColor(self,r,b,g):
         hex_color = '#' + self.Hex_s(r) + self.Hex_s(b) + self.Hex_s(g)
@@ -23,7 +26,7 @@ class ImageConversion:
         return '<span style="color:' + self.convert_hexColor(r,g,b) + '; ">#</span>'
 
     def writeToFile(self,html):
-        write_html = open('./index.html','w')
+        write_html = open(String(self.htmlName).formatStr(),'w')
         write_html.write(html)
         write_html.close()
 
@@ -43,6 +46,8 @@ class ImageConversion:
     def CreateHtml(self):
 
         html = self.start_html()
+
+        print 'create path: => ' + String(self.htmlName).formatStr()
 
         img = cv2.imread(self.imagePath , cv2.IMREAD_COLOR)
         if img is None:
