@@ -13,4 +13,4 @@ class Imgmain:
         Img.start()
         im = ImageConversion(self.argv,self.htmlName)
         im.CreateHtml()
-        Img._Thread__stop()
+        Img.stop()

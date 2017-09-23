@@ -51,6 +51,8 @@ class Indicator:
 
     def Indicator(self):
         for num in range(0,len(self.indis)):
+            if self.isStop == True:
+                break
             self.bufferOut(self.indis[num],self.dur)
 
     def bufferOut(self,buf,t):
@@ -64,3 +66,5 @@ class Indicator:
     def start(self):
         while self.isStop == False:
             self.Indicator()
+    def stop(self):
+        self.isStop = True

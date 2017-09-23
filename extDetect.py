@@ -15,6 +15,7 @@ class Extentions:
         self.isConver = 1
         self.VERSION = -1
         self.SELECTED = -1
+        self.OUTPUT_PATH = 0
 
         if len(argv) == 1:
             self.isConver = 0
@@ -36,7 +37,9 @@ class Extentions:
                     else:
                         self.htmlName = self.argv[op+1]
                         print self.htmlName
-
+                elif self.argv[op] == '-o':
+                    self.OUTPUT_PATH = 1
+                    
     def shaping(self, path):
         if path.find('./') != -1:
             string = path.split('./')

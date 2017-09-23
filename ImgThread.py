@@ -7,6 +7,12 @@ class ImgThread(threading.Thread):
 
     def __init__(self):
         super(ImgThread, self).__init__()
+        indis = ('Creating','Creating.','Creating..','Creating...','Creating....')
+        speed = 0.3
+        self.pro = Indicator(indis,speed)
 
     def run (self):
-        Indicator.Ind(Indicator.CREATING)
+        self.pro.start()
+        
+    def stop(self):
+        self.pro.stop()
