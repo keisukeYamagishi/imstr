@@ -8,6 +8,8 @@
 
 Convert take in photos into character strings and display at character strings.
 
+## Supported python2.7
+
 ## git clone
 
 ***Via SSH***: For those who plan on regularly making direct commits, cloning over SSH may provide a better experience (which requires uploading SSH keys to GitHub):
