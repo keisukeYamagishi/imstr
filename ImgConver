@@ -3,7 +3,6 @@ import sys
 from extDetect import Extentions
 from Imgmain import Imgmain
 from ImgThread import ImgThread
-from Progress import Indicator
 
 if __name__ == "__main__":
 

@@ -23,7 +23,7 @@ class Extentions:
     def CanConversion(self):
 
         if self.isConver == 0:
-            self.output = 'Use it this\n\t' + self.val + ' image path [ /home/shichimi/conversion.png ]\n\t' + self.val + ' -v [ Disply this version ]\nSupported image format\n\tpng, jpeg, kpg, jpe'
+            self.output = 'Use it this\n\t' + self.val + ' image path [ /home/shichimi/conversion.png ]\n\t' + self.val + ' -v [ Disply this version ]\nSupported image format\n\tpng, jpeg, jpg, jpe'
         else:
 
             for op in range(len(self.argv)):
