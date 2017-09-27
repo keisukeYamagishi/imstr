@@ -16,6 +16,7 @@ class Extentions:
         self.VERSION = -1
         self.SELECTED = -1
         self.OUTPUT_PATH = 0
+        self.htmlName = ''
 
         if len(argv) == 1:
             self.isConver = 0
