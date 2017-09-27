@@ -4,13 +4,13 @@ from ImgThread import ImgThread
 
 class Imgmain:
 
-    def __init__(self, argv,htmlName):
+    def __init__(self, argv,option):
         self.argv = argv
-        self.htmlName = htmlName
+        self.option = option
 
     def imgmain(self):
         Img = ImgThread()
         Img.start()
-        im = ImageConversion(self.argv,self.htmlName)
+        im = ImageConversion(self.argv,self.option)
         im.CreateHtml()
         Img.stop()

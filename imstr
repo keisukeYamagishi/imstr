@@ -15,6 +15,6 @@ if __name__ == "__main__":
     elif option.VERSION == Extentions.VERSION_DISPALY:
         print option.versionDisplay
     elif option.SELECTED == Extentions.HTML_NAME:
-        Imgmain(sys.argv[1],option.htmlName).imgmain()
+        Imgmain(sys.argv[1],option).imgmain()
     else:
         Imgmain(sys.argv[1], '').imgmain()

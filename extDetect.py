@@ -23,7 +23,7 @@ class Extentions:
     def CanConversion(self):
 
         if self.isConver == 0:
-            self.output = 'Use it this\n\t' + self.val + ' image path [ /home/shichimi/conversion.png ]\n\t' + self.val + ' -v [ Disply this version ]\nSupported image format\n\tpng, jpeg, jpg, jpe'
+            self.output = 'Use it this\n\t' + self.val + ' [ /home/shichimi/conversion.png ]\noptions\n\t-n html_name\n\t-v [ Disply this version ]\n\t-o Not Display output path\nSupported image format\n\tpng, jpeg, jpg, jpe'
         else:
 
             for op in range(len(self.argv)):
@@ -36,7 +36,6 @@ class Extentions:
                         self.htmlName = ''
                     else:
                         self.htmlName = self.argv[op+1]
-                        print self.htmlName
                 elif self.argv[op] == '-o':
                     self.OUTPUT_PATH = 1
                     
