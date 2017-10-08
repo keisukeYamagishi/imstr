@@ -89,4 +89,11 @@ Complete
 When executed, it is written in index.html.
 Here is the file at run time
 
+![](https://github.com/keisukeYamagishi/ImageToStr/blob/master/nakamoto.jpeg)
+
+convert 
+
+
+
+
 [http://shichimitoucarashi.com/ImageToStr/](http://shichimitoucarashi.com/ImageToStr/)
