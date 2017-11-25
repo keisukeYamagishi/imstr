@@ -116,4 +116,4 @@ create html
 
 
 
-[http://shichimitoucarashi.com/ImageToStr/](http://shichimitoucarashi.com/ImageToStr/)
+[http://shichimitoucarashi.com/imstr/](http://shichimitoucarashi.com/imstr/)
