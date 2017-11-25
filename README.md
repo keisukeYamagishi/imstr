@@ -61,6 +61,25 @@ brew install opencv
 pip install numpy
 ```
 
+When the following log is output
+
+->> ./imstr 
+RuntimeError: module compiled against API version 0xb but this version of numpy is 0x9
+Traceback (most recent call last):
+  File "./imstr", line 4, in <module>
+    from Imgmain import Imgmain
+  File "/Users/keisukeyamagishi/Code/git/imstr/Imgmain.py", line 1, in <module>
+    from ImageConversion import ImageConversion
+  File "/Users/keisukeyamagishi/Code/git/imstr/ImageConversion.py", line 3, in <module>
+    import cv2
+ImportError: numpy.core.multiarray failed to import
+
+run this
+
+```
+sudo pip install numpy --upgrade --ignore-installed
+```
+
 # Use it
 
 ```
