@@ -83,26 +83,30 @@ sudo pip install numpy --upgrade --ignore-installed
 # Use it
 
 ```
-->> ./ImgConver
+->> ./imstr
 Use it this
-	ImgConver image path [ /home/shichimi/conversion.png ]
-	ImgConver -v [ Disply this version ]
+	imstr [ /home/shichimi/conversion.png ]
+options
+	-n html_name
+	-v [ Disply this version ]
+	-o Not Display output path
 Supported image format
 	png, jpeg, jpg, jpe
-
 ```
 ## Run
 
 ```
-->> ./ImgConver -v
-ImgConver version: 2.0.1
+->> ./imstr -v
+imstr version: 2.0.1
 ```
 
 ***create html***
 
 ```
-->> ./ImgConver nakamoto.jpeg
+->> ./imstr bigbear.jpg 
+create path: => /Users/keisukeyamagishi/Code/git/imstr/index.html
 Complete
+🍺 
 ```
 
 When executed, it is written in index.html.
