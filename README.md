@@ -19,7 +19,7 @@ mkdir gitrepo
 
 cd gitrepo
 
-git cloen git@github.com:keisukeYamagishi/ImageToStr.git
+git@github.com:keisukeYamagishi/imstr.git
 
 ```
 
@@ -30,7 +30,7 @@ mkdir gitrepo
 
 cd gitrepo
 
-git clone https://github.com/keisukeYamagishi/ImageToStr.git
+git clone https://ithub.com:keisukeYamagishi/imstr.git
 
 ```
 
