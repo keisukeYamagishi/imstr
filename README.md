@@ -1,4 +1,4 @@
-# ImageToStr
+# imstr
 
 ### OverView
 
