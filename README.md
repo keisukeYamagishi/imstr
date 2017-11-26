@@ -45,7 +45,10 @@ open terminal.app
 ```
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
+```
 tap homebrew/science
+```
 
 set up python for mac
 
