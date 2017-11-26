@@ -36,6 +36,14 @@ git clone https://ithub.com:keisukeYamagishi/imstr.git
 
 ### use for mac
 
+set up python for mac
+
+```
+$ cd /usr/local/bin
+$ ln -s /usr/local/bin/python2.7 python
+$ ls -l /usr/local/bin/python -> python2.7
+```
+
 if there is not homebrew install homebrew  
 
 show homebrew info at https://brew.sh/index_ja.html
@@ -46,6 +54,10 @@ open terminal.app
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 tap homebrew/science
+
+```
+brew install python
+```
 
 ```
  brew tap homebrew/science
