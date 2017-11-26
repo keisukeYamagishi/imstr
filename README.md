@@ -46,10 +46,6 @@ open terminal.app
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-```
-tap homebrew/science
-```
-
 set up python for mac
 
 ```
@@ -58,7 +54,6 @@ $ cd /usr/local/bin
 $ ln -s /usr/local/bin/python2.7 python
 $ ls -l /usr/local/bin/python -> python2.7
 ```
-
 
 ```
 $ brew tap homebrew/science
@@ -88,7 +83,8 @@ Traceback (most recent call last):
     import cv2
 ImportError: numpy.core.multiarray failed to import
 ```
-run this
+
+Please use the following
 
 ```
 $ sudo pip install numpy --upgrade --ignore-installed
@@ -107,7 +103,7 @@ options
 Supported image format
 	png, jpeg, jpg, jpe
 ```
-## Run
+## version
 
 ```
 $ ./imstr -v
@@ -122,6 +118,8 @@ create path: => /Users/keisukeyamagishi/Code/git/imstr/index.html
 Complete
 🍺 
 ```
+
+## Example html
 
 When executed, it is written in index.html.
 Here is the file at run time
