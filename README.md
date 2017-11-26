@@ -15,22 +15,22 @@ Convert take in photos into character strings and display at character strings.
 ***Via SSH***: For those who plan on regularly making direct commits, cloning over SSH may provide a better experience (which requires uploading SSH keys to GitHub):
 
 ```
-mkdir gitrepo
+$ mkdir gitrepo
 
-cd gitrepo
+$ cd gitrepo
 
-git@github.com:keisukeYamagishi/imstr.git
+$ git@github.com:keisukeYamagishi/imstr.git
 
 ```
 
 ***Via https***: For those checking out sources as read-only, HTTPS works best:
 
 ```
-mkdir gitrepo
+$ mkdir gitrepo
 
-cd gitrepo
+$ cd gitrepo
 
-git clone https://ithub.com:keisukeYamagishi/imstr.git
+$ git clone https://ithub.com:keisukeYamagishi/imstr.git
 
 ```
 
@@ -43,7 +43,7 @@ show homebrew info at https://brew.sh/index_ja.html
 open terminal.app
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 tap homebrew/science
 
@@ -58,22 +58,23 @@ $ ls -l /usr/local/bin/python -> python2.7
 
 
 ```
- brew tap homebrew/science
+$ brew tap homebrew/science
 ```
 
 install opencv
 
 ```
-brew install opencv
+$ brew install opencv
 ```
 
 ```
-pip install numpy
+$ pip install numpy
 ```
 
 When the following log is output
 
-->> ./imstr 
+```
+$ ./imstr 
 RuntimeError: module compiled against API version 0xb but this version of numpy is 0x9
 Traceback (most recent call last):
   File "./imstr", line 4, in <module>
@@ -83,17 +84,17 @@ Traceback (most recent call last):
   File "/Users/keisukeyamagishi/Code/git/imstr/ImageConversion.py", line 3, in <module>
     import cv2
 ImportError: numpy.core.multiarray failed to import
-
+```
 run this
 
 ```
-sudo pip install numpy --upgrade --ignore-installed
+$ sudo pip install numpy --upgrade --ignore-installed
 ```
 
 # Use it
 
 ```
-->> ./imstr
+$ ./imstr
 Use it this
 	imstr [ /home/shichimi/conversion.png ]
 options
@@ -106,14 +107,14 @@ Supported image format
 ## Run
 
 ```
-->> ./imstr -v
+$ ./imstr -v
 imstr version: 2.0.1
 ```
 
 ***create html***
 
 ```
-->> ./imstr bigbear.jpg 
+$ ./imstr bigbear.jpg 
 create path: => /Users/keisukeyamagishi/Code/git/imstr/index.html
 Complete
 🍺 
