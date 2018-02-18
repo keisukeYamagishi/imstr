@@ -124,11 +124,11 @@ Complete
 When executed, it is written in index.html.
 Here is the file at run time
 
-![](https://github.com/keisukeYamagishi/imstr/blob/master/bigbear.jpg)
+![](https://github.com/keisukeYamagishi/imstr/blob/master/Resource/bigbear.jpg)
 
 create html
 
-![](https://github.com/keisukeYamagishi/imstr/blob/master/Result.png)
+![](https://github.com/keisukeYamagishi/imstr/blob/master/Resource/Result.png)
 
 
 
