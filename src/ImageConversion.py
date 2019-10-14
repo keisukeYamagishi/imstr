@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/local/bin/python
 # coding:utf-8
 import cv2
 import numpy as np
@@ -48,11 +48,11 @@ class ImageConversion:
         html = self.start_html()
 
         if self.option.OUTPUT_PATH == 0:
-            print 'create path: => ' + String(self.option.htmlName).formatStr()
+            print ('create path: => ' + String(self.option.htmlName).formatStr())
 
         img = cv2.imread(self.imagePath , cv2.IMREAD_COLOR)
         if img is None:
-            print 'Failuer loaded image'
+            print ('Failuer loaded image')
             return
 
         hei, wid = img.shape[:2]
@@ -65,7 +65,7 @@ class ImageConversion:
 
             for hei_num in range(0, wid):
                 if img[wid_num,hei_num,0] is None:
-                    print "none obj"
+                    print ("none obj")
                 else:
                     color  = self.EmurateColor(wid_num,hei_num,img)
                     html = html + self.span_html(color[0],color[1],color[2])
@@ -73,4 +73,4 @@ class ImageConversion:
         html = html + self.end_html()
         self.writeToFile(html)
 
-        print 'Complete\n🍺 '
+        print ('Complete\n🍺 ')

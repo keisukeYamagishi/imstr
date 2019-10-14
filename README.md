@@ -2,13 +2,13 @@
 
 ### OverView
 
-[![](https://img.shields.io/badge/language-Python-ff69b4.svg)](https://www.python.org/doc/)
+[![](https://img.shields.io/badge/lang-python3-red)](https://www.python.org/doc/)
 [![](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/keisukeYamagishi/ImageToStr/blob/master/LICENSE)
-[![](https://img.shields.io/badge/Twitter-O--Liker%20Error-blue.svg)](https://twitter.com/O_Linker_Error)
+[![](https://img.shields.io/badge/twitter-brew__0__O-green)](https://twitter.com/brew_0_O)
 
 Convert take in photos into character strings and display at character strings.
 
-## Supported python2.7
+## Supported python3.7.4
 
 ## git clone
 
@@ -49,45 +49,15 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 set up python for mac
 
 ```
-$ brew install python
-$ cd /usr/local/bin
-$ ln -s /usr/local/bin/python2.7 python
-$ ls -l /usr/local/bin/python -> python2.7
+$ brew install python3
 ```
 
 ```
-$ brew tap homebrew/science
-```
-
-install opencv
-
-```
-$ brew install opencv
+$ pip3 install numpy
 ```
 
 ```
-$ pip install numpy
-```
-
-When the following log is output
-
-```
-$ ./imstr 
-RuntimeError: module compiled against API version 0xb but this version of numpy is 0x9
-Traceback (most recent call last):
-  File "./imstr", line 4, in <module>
-    from Imgmain import Imgmain
-  File "/Users/keisukeyamagishi/Code/git/imstr/Imgmain.py", line 1, in <module>
-    from ImageConversion import ImageConversion
-  File "/Users/keisukeyamagishi/Code/git/imstr/ImageConversion.py", line 3, in <module>
-    import cv2
-ImportError: numpy.core.multiarray failed to import
-```
-
-Please use the following
-
-```
-$ sudo pip install numpy --upgrade --ignore-installed
+$ brew install opencv3
 ```
 
 # Use it

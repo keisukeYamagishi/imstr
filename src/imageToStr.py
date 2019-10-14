@@ -39,7 +39,7 @@ html = start_html()
 img = cv2.imread('./fuckIage.png', cv2.IMREAD_COLOR)
 
 if img is None:
-    print 'Failuer loaded image'
+    print ('Failuer loaded image')
     sys.exit(1)
 
 hei, wid = img.shape[:2]
@@ -52,7 +52,7 @@ for wid_num in range(0,hei):
 
     for hei_num in range(0, wid):
         if img[wid_num,hei_num,0] is None:
-            print "none obj"
+            print ("none obj")
         else:
             color  = EmurateColor(wid_num,hei_num)
             html = html + span_html(color[0],color[1],color[2])
@@ -60,4 +60,4 @@ for wid_num in range(0,hei):
 html = html + end_html()
 writeToFile()
 
-print 'Complete'
+print ('Complete')
