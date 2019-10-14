@@ -60,7 +60,7 @@ class Indicator:
         sys.stdout.write(buf + '\r')
         sys.stdout.flush()
         time.sleep(t)
-        print '\b' + space * len(buf) + '\r',
+        print ('\b' + space * len(buf) + '\r')
         time.sleep(t)
 
     def start(self):
