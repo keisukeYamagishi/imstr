@@ -2,21 +2,20 @@
 import os, sys
 sys.path.append("../src")
 
-from extDetect import Extentions
-from Imgmain import Imgmain
-from ImgThread import ImgThread
+from Option import Option
+from ImstrMain import ImstrMain
 
 if __name__ == "__main__":
 
-    option = Extentions(sys.argv)
+    option = Option(sys.argv)
 
-    option.CanConversion()
+    option.canConversion()
 
     if option.isConver == 0:
         print (option.output)
-    elif option.VERSION == Extentions.VERSION_DISPALY:
+    elif option.VERSION == Option.VERSION_DISPALY:
         print (option.versionDisplay)
-    elif option.SELECTED == Extentions.HTML_NAME:
-        Imgmain(sys.argv[1],option).imgmain()
+    elif option.SELECTED == Option.HTML_NAME:
+        ImstrMain(sys.argv[1],option).imgmain()
     else:
-        Imgmain(sys.argv[1],option).imgmain()
+        ImstrMain(sys.argv[1],option).imgmain()

@@ -6,14 +6,14 @@ import sys
 import os
 from String import String
 
-class ImageConversion:
+class ImageString:
 
     def __init__(self, imagePath, option):
         self.imagePath = imagePath
         self.option = option
 
     def convert_hexColor(self,r,b,g):
-        hex_color = '#' + self.Hex_s(r) + self.Hex_s(b) + self.Hex_s(g)
+        hex_color = '#' + self.hex_s(r) + self.hex_s(b) + self.hex_s(g)
         return  hex_color
 
     def start_html(self):
@@ -30,20 +30,20 @@ class ImageConversion:
         write_html.write(html)
         write_html.close()
 
-    def Hex_s(self,hex_s):
+    def hex_s(self,hex_s):
         hexNumber = hex(hex_s)
         strings = format(hexNumber)
         split_str = strings.split('x')
         split = split_str[1]
         return split
 
-    def EmurateColor(self,wid_num, hei_num,image):
+    def emurateColor(self,wid_num, hei_num,image):
         self.b = image[wid_num,hei_num,0]
         self.g = image[wid_num,hei_num,1]
         self.r = image[wid_num,hei_num,2]
         return (self.r,self.g,self.b)
 
-    def CreateHtml(self):
+    def createHtml(self):
 
         html = self.start_html()
 
@@ -67,7 +67,7 @@ class ImageConversion:
                 if img[wid_num,hei_num,0] is None:
                     print ("none obj")
                 else:
-                    color  = self.EmurateColor(wid_num,hei_num,img)
+                    color  = self.emurateColor(wid_num,hei_num,img)
                     html = html + self.span_html(color[0],color[1],color[2])
 
         html = html + self.end_html()

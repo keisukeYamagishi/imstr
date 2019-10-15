@@ -76,7 +76,7 @@ Supported image format
 ## version
 
 ```
-$ ./imstr -v
+$ ./bin/imstr -v
 imstr version: 2.0.1
 ```
 
