@@ -1,6 +1,6 @@
 import os.path
 
-class Extentions:
+class Option:
 
     NOT_DO = 0
     VERSION_DISPALY = 1
@@ -21,10 +21,10 @@ class Extentions:
         if len(argv) == 1:
             self.isConver = 0
 
-    def CanConversion(self):
+    def canConversion(self):
 
         if self.isConver == 0:
-            self.output = 'Use it this\n\t' + self.val + ' [ /home/shichimi/conversion.png ]\noptions\n\t-n html_name\n\t-v [ Disply this version ]\n\t-o Not Display output path\nSupported image format\n\tpng, jpeg, jpg, jpe'
+            self.output = 'Use it this\n\t' + self.val + ' path option \noptions\n\t-n html_name\n\t-v [ Disply this version ]\n\t-o Not Display output path\nSupported image format\n\tpng, jpeg, jpg, jpe'
         else:
 
             for op in range(len(self.argv)):
