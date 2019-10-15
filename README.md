@@ -63,7 +63,7 @@ $ brew install opencv3
 # Use it
 
 ```
-$ ./imstr
+$ ./bin/imstr
 Use it this
 	imstr [ /home/shichimi/conversion.png ]
 options
