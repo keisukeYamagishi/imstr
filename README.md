@@ -65,7 +65,7 @@ $ brew install opencv3
 ```
 $ ./imstr
 Use it this
-	imstr [ /home/shichimi/conversion.png ]
+Usage: xsort [-option] [<path>]
 options
 	-n html_name
 	-v [ Disply this version ]
