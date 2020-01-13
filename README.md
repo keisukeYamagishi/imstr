@@ -99,7 +99,3 @@ Here is the file at run time
 create html
 
 ![](https://github.com/keisukeYamagishi/imstr/blob/master/Resource/Result.png)
-
-
-
-[http://shichimitoucarashi.com/imstr/](http://shichimitoucarashi.com/imstr/)
