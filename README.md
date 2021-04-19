@@ -4,7 +4,6 @@
 
 [![](https://img.shields.io/badge/lang-python3-red)](https://www.python.org/doc/)
 [![](https://img.shields.io/apm/l/vim-mode.svg)](https://github.com/keisukeYamagishi/ImageToStr/blob/master/LICENSE)
-[![](https://img.shields.io/badge/twitter-brew__0__O-green)](https://twitter.com/brew_0_O)
 
 Convert take in photos into character strings and display at character strings.
 
