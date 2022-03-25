@@ -9,13 +9,13 @@ if __name__ == "__main__":
 
     option = Option(sys.argv)
 
-    option.canConversion()
+    option.setup()
 
-    if option.isConver == 0:
+    if option.isConver == True:
         print (option.output)
-    elif option.VERSION == Option.VERSION_DISPALY:
+    elif option.VERSION == True:
         print (option.versionDisplay)
-    elif option.SELECTED == Option.HTML_NAME:
+    elif option.SELECTED == True:
         ImstrMain(sys.argv[1],option).imgmain()
     else:
         ImstrMain(sys.argv[1],option).imgmain()
