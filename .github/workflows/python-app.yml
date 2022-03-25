@@ -29,4 +29,4 @@ jobs:
         pip install opencv-python
     - name: execute imstr
       run: |
-        cd ./bin && python ./imstr
+        cd ./bin && python ./imstr && python ./imstr ../Resouce/nakamoto-satoshi.jpg
