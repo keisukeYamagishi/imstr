@@ -19,7 +19,6 @@ $ mkdir gitrepo
 $ cd gitrepo
 
 $ git@github.com:keisukeYamagishi/imstr.git
-
 ```
 
 ***Via https***: For those checking out sources as read-only, HTTPS works best:
@@ -30,7 +29,6 @@ $ mkdir gitrepo
 $ cd gitrepo
 
 $ git clone https://ithub.com:keisukeYamagishi/imstr.git
-
 ```
 
 ### use for mac
