@@ -93,7 +93,7 @@ Complete
 When executed, it is written in index.html.
 Here is the file at run time
 
-![](https://github.com/keisukeYamagishi/imstr/blob/master/Resource/bigbear.jpg)
+<img width="542" alt="Screen Shot 2022-03-25 at 18 47 07" src="https://user-images.githubusercontent.com/5553852/160096881-5c616c23-c791-4d9d-9717-afc6ca0d8f3a.png">
 
 create html
 
