@@ -7,7 +7,7 @@
 
 Convert take in photos into character strings and display at character strings.
 
-## Supported python3.7.4
+## Supported python3.*
 
 ## git clone
 
