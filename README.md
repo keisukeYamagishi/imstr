@@ -60,9 +60,9 @@ $ brew install opencv3
 # Use it
 
 ```
-$ ./imstr
+$ python3 ./imstr
 Use it this
-Usage: xsort [-option] [<path>]
+	imstr path option 
 options
 	-n html_name
 	-v [ Disply this version ]
