@@ -95,4 +95,4 @@ Here is the file at run time
 
 create html
 
-[Demo page](https://shichimitoucarashi.com/imstr)
+[Demo page](https://shichimitoucarashi.herokuapp.com/imstr)
